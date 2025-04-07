@@ -1,3 +1,4 @@
+import 'package:file_transfer_helper/model/external_storage.dart';
 import 'package:file_transfer_helper/model/move_progress.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
@@ -36,8 +37,12 @@ abstract class FileTransferHelperPlatform extends PlatformInterface {
     // TODO: implement move
     throw UnimplementedError();
   }
-}
 
+  Future<List<ExternalStorage>> getExternalStorageInfo() {
+    // TODO: implement move
+    throw UnimplementedError();
+  }
+}
 
 class FileTransferException implements Exception {
   final String code;
